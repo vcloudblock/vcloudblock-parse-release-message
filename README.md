@@ -1,22 +1,5 @@
 # openblock-resource
 
-[![Publish npm package](https://github.com/openblockcc/openblock-resource/actions/workflows/publish.yml/badge.svg)](https://github.com/openblockcc/openblock-resource/actions/workflows/publish.yml)
-![GitHub](https://img.shields.io/github/license/openblockcc/openblock-resource)
+[![Publish npm package](https://github.com/openblockcc/openblock-parse-release-message/actions/workflows/publish.yml/badge.svg)](https://github.com/openblockcc/openblock-parse-release-message/actions/workflows/publish.yml)
 
-Provide a local resource server for openblock.
-
-## Instructions
-
-- Start resource server
-
-    ```bash
-    npm install
-    npm run fetch
-    npm start
-    ```
-
-- Test upgrade funciton, run:
-
-    ```bash
-    npm test
-    ```
+Check and parse release messages.
