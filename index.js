@@ -1,5 +1,15 @@
-const parseMessage = (message) => {
+const { NodeHtmlMarkdown } = require('node-html-markdown');
+
+const parseMessage = (message, option = {}) => {
     const messageObj = {};
+
+    if (option.html) {
+        message = NodeHtmlMarkdown.translate(message)
+            .replace(/\* \*\*/g, '- **')
+            .replace(/\*\*  \n/g, '**\n')
+            .replace(/\n   /g, '\n    ')
+        console.log("message:", message);
+    }
 
     const mutiLanguageMessage = message.split('##').filter((item) => item !== '');
     mutiLanguageMessage.forEach(element => {
