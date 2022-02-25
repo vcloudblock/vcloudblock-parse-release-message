@@ -1,15 +1,17 @@
 {
   "name": "openblock-parse-release-message",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Recive markdown message info and out put a object",
   "bin": {
     "rmsg-check": "./bin/check-message.js"
   },
-  "main": "index.js",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
   "scripts": {
     "test:md": "node ./test/parseMarkdown.js",
     "test:html": "node ./test/parseHtmlMarkdown.js",
-    "test:check": "node ./bin/check-message.js"
+    "test:check": "node ./bin/check-message.js",
+    "build": "tsc --build"
   },
   "author": "ArthurZheng",
   "license": "MIT",
@@ -19,6 +21,7 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^8.7.0",
-    "eslint-config-scratch": "^7.0.0"
+    "eslint-config-scratch": "^7.0.0",
+    "typescript": "^4.5.5"
   }
 }
