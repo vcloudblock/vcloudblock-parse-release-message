@@ -25,7 +25,19 @@ const parseMessage = (message, option = {}) => {
             infos.forEach(info => {
                 const details = info.split('    ');
                 const subTitle = details[0].replace(/(?:\r\n|\*)/g, '');
-                const descriptions = details.slice(1).map(item => item.replace(/\r\n/g, ''));
+                const descriptions = details.slice(1).map(item => {
+                    const detail = item.replace(/\r\n/g, '');
+
+                    const deletAllWarp = _text => {
+                        if (_text.endsWith('\n')) {
+                            return deletAllWarp(_text.slice(0, -1));
+                        } else {
+                            return _text;
+                        }
+                    }
+
+                    return deletAllWarp(detail);
+                });
                 messageObj[`${language}`][`${subTitle}`] = descriptions;
             });
         });

@@ -24,5 +24,5 @@ const testData = `## Change Log (en)
     1. 错误1 （首次发布，仅用于测试更新功能）
     2. 错误2 （首次发布，仅用于测试更新功能）`
 
-const parsedMessage = parseMessage(da2);
+const parsedMessage = parseMessage(testData);
 console.log("parsedMessage=", parsedMessage);
