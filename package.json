@@ -1,6 +1,6 @@
 {
   "name": "openblock-parse-release-message",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Recive markdown message info and out put a object",
   "bin": {
     "rmsg-check": "./bin/check-message.js"
