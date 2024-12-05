@@ -5,12 +5,12 @@ const testData = {
     version: '2.3.0',
     files: [
       {
-        url: 'OpenBlock-Desktop_2.3.0.exe',
+        url: 'VCloudBlock-Desktop_2.3.0.exe',
         sha512: '2gm35cf5/N+VEGPsGyz3G8UznHngKu9vI8QS1GF/YOpIkvN8cONSXJpZp6P6+JaoTSTnD8oNwbmL1emLytorKA==',
         size: 321531435
       }
     ],
-    path: 'OpenBlock-Desktop_2.3.0.exe',
+    path: 'VCloudBlock-Desktop_2.3.0.exe',
     sha512: '2gm35cf5/N+VEGPsGyz3G8UznHngKu9vI8QS1GF/YOpIkvN8cONSXJpZp6P6+JaoTSTnD8oNwbmL1emLytorKA==',
     releaseDate: '2022-02-25T07:32:32.229Z',
     releaseName: "This is a test, don't use this release.",

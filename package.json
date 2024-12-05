@@ -1,5 +1,5 @@
 {
-  "name": "openblock-parse-release-message",
+  "name": "vcloudblock-parse-release-message",
   "version": "0.0.4",
   "description": "Recive markdown message info and out put a object",
   "bin": {
@@ -16,7 +16,8 @@
   "author": "ArthurZheng",
   "license": "MIT",
   "dependencies": {
-    "node-html-markdown": "^1.1.3"
+    "node-html-markdown": "^1.1.3",
+    "vcloudblock-parse-release-message": "file:"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
