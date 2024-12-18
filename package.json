@@ -13,7 +13,7 @@
     "test:check": "node ./bin/check-message.js",
     "build": "tsc --build"
   },
-  "author": "ArthurZheng",
+  "author": "vcloudblock",
   "license": "MIT",
   "dependencies": {
     "node-html-markdown": "^1.1.3"
